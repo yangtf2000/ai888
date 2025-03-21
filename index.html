@@ -1,11 +1,11 @@
 <!DOCTYPE html><html><head>
-      <title>ai应用场景指南3</title>
+      <title>策划AI应用场景指南3</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
       <link rel="stylesheet" href="file:///c:\Users\yangtiefu\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.18\crossnote\dependencies\katex\katex.min.css">
-      
-      
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Fira+Code&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
       
       
       
@@ -13,6 +13,170 @@
       code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
 /* Please visit the URL below for more information: */
 /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+/* 重置与基础设置 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: var(--screen-bg);
+    min-height: 100vh;
+}
+
+body {
+      background: var(--bg-blue);  /* 内容区域保持原色 */
+      box-shadow: 0 0 40px rgba(0,0,0,0.1); /* 增加分割感 */
+      max-width: 900px;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bg-blue: #c6c0b5; /* 更明亮的背景 */
+    --tech-blue: #2a4a6e;
+    --neon-blue: #0077b6;
+    --cyber-aqua: #00b4d8;
+    --text-dark: #2d4059;
+    --screen-bg: #0a192f; 
+}
+
+
+
+/* 科技感容器 */
+.cyber-container {
+    background: transparent;
+    padding: 4rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 119, 182, 0.15);
+    margin: 2rem 0;
+    border: 1px solid rgba(0, 119, 182, 0.1);
+    position: relative;
+    z-index: 1;
+}
+/* 标题系统 */
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 2.8rem;
+    color: #fff; /* 修改文字颜色 */
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, var(--tech-blue), var(--neon-blue));
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 119, 182, 0.15);
+    display: inline-block;
+    width: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--tech-blue);
+    margin: 3rem 0 1.5rem;
+    padding: 1rem 1.5rem;
+    background: rgba(0, 180, 216, 0.1);
+    border-radius: 6px 0 0 6px;
+    border-left: 4px solid var(--cyber-aqua);
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: linear-gradient(to right, rgba(0, 180, 216, 0.1), transparent);
+}
+
+
+/* 可读性表格 */
+table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #e3f4fc; /* 更柔和的浅蓝色 */
+    color: var(--tech-blue); /* 使用深蓝色文字 */
+    padding: 1rem;
+    border-bottom: 2px solid var(--cyber-aqua); /* 底部装饰线 */
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; /* 字母大写 */
+    font-family: 'Roboto', sans-serif; /* 更简洁的字体 */
+}
+
+
+
+
+
+
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0f2f1;
+    background: white;
+}
+
+tr:hover td {
+    background: #f0faff;
+}
+
+/* 清晰代码块 */
+pre {
+    background: #f8fbfe;
+    border: 1px solid rgba(0, 180, 216, 0.3);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    color: var(--neon-blue);
+    background: #f8fbfe;
+}
+
+/* 强调效果 */
+strong {
+    color: var(--neon-blue);
+    position: relative;
+    padding: 0 0.2em;
+}
+
+strong::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--cyber-aqua);
+}
+
+body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+
 
       </style>
       <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
@@ -22,7 +186,7 @@
 </script></head><body for="html-export">
     
     
-      <div class="crossnote markdown-preview  ">
+      <div class="cyber-container  ">
       
 <h1 style="text-align:center">AI工具在策划设计工作的应用指南 </h1>
 <h2 style="text-align:center">杨铁夫 </h2>
@@ -206,6 +370,23 @@
 <ul>
 <li><a href="#1031-%E5%9F%BA%E7%A1%80%E7%89%88%E5%BC%8F%E8%A6%81%E6%B1%82">10.3.1 基础版式要求</a></li>
 <li><a href="#1032-%E4%B8%93%E4%B8%9A%E7%89%88%E5%A2%9E%E5%BC%BA%E8%A6%81%E7%B4%A0">10.3.2 专业版增强要素</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%99%BA%E8%83%BD%E4%BD%93%E4%B8%BA%E8%87%AA%E5%B7%B1%E5%AE%9A%E5%88%B6%E7%9A%84%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F">第十一章、智能体：为自己定制的应用程序</a>
+<ul>
+<li><a href="#111-ai-%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9B%B0%E5%A2%83%E4%B8%8E%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E4%BB%B7%E5%80%BC">11.1 AI 工具的困境与智能体的价值</a></li>
+<li><a href="#112--coze%E5%9B%BD%E5%86%85%E5%8E%9F%E7%94%9F%E6%99%BA%E8%83%BD%E4%BD%93%E6%9E%84%E5%BB%BA%E5%B9%B3%E5%8F%B0">11.2  Coze：国内原生智能体构建平台</a></li>
+<li><a href="#113-dify%E4%BD%8E%E4%BB%A3%E7%A0%81ai%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">11.3 Dify：低代码AI应用开发平台</a></li>
+<li><a href="#114-%E6%A1%88%E4%BE%8B%E7%A4%BA%E6%84%8F">11.4 案例示意</a>
+<ul>
+<li><a href="#1141-%E5%89%8D%E6%9C%9F%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86%E4%B8%8E%E6%94%BF%E7%AD%96%E7%A0%94%E7%A9%B6">11.4.1 前期资料收集与政策研究</a></li>
+<li><a href="#1142-%E8%A7%84%E5%88%92%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8C%87%E6%A0%87%E7%94%9F%E6%88%90">11.4.2 规划方案与指标生成</a></li>
+<li><a href="#1143-%E7%BB%8F%E6%B5%8E%E6%B5%8B%E7%AE%97%E4%B8%8E%E6%8A%95%E8%9E%8D%E8%B5%84%E5%88%86%E6%9E%90">11.4.3 经济测算与投融资分析</a></li>
+<li><a href="#1144-%E6%95%88%E6%9E%9C%E5%9B%BE%E4%B8%8E%E6%B1%87%E6%8A%A5%E6%9D%90%E6%96%99%E5%88%B6%E4%BD%9C">11.4.4 效果图与汇报材料制作</a></li>
+<li><a href="#1145-%E5%85%A8%E6%B5%81%E7%A8%8B%E4%B8%B2%E8%81%94%E4%B8%8E%E4%BC%98%E5%8C%96">11.4.5 全流程串联与优化</a></li>
+<li><a href="#1146-%E8%90%BD%E5%9C%B0%E5%BB%BA%E8%AE%AE">11.4.6 落地建议</a></li>
 </ul>
 </li>
 </ul>
@@ -2028,8 +2209,145 @@ Negative prompt: 变形扭曲, 比例失调, 模糊
 <li>配套风险预警雷达图（需标注阈值区间）</li>
 <li>添加政策原文批注（标注时效性与适用范围）</li>
 </ul>
+<h2 id="第十一章-智能体为自己定制的应用程序">第十一章、智能体：为自己定制的应用程序 </h2>
+<h3 id="111-ai-工具的困境与智能体的价值">11.1 AI 工具的困境与智能体的价值 </h3>
+<p><strong>1. 工具碎片化阻碍全流程自动化</strong></p>
+<ul>
+<li>项目策划涉及政策、数据、报告等多环节，依赖分散工具手动操作，流程断裂、效率低下。智能体通过整合工具与自动化工作流，构建全流程智能协作体系。</li>
+</ul>
+<p><strong>2. 工具的功能孤立：策划流程的 “断头路”</strong></p>
+<ul>
+<li>现有工具仅处理单一环节（如分析、测算、排版），需人工切换搬运数据：政策下载、数据复制、格式调整。问题：数据不同步、逻辑脱节、重复操作，导致流程割裂、效率损耗。</li>
+</ul>
+<p><strong>3. 智能体的整合作用：构建 “智能高速公路”</strong></p>
+<ul>
+<li>智能体通过 <strong>“工具集成 + 工作流编排”</strong>，统一管理政策库、数据库、模板：</li>
+<li>统一入口：连接分散工具，形成资源中枢。</li>
+<li>自动流程：预设 “触发 - 执行 - 输出” 标准路径（如地块录入→政策匹配→报告生成）。</li>
+<li>动态优化：内置规则驱动决策（如匹配模板、校验逻辑），消除人工干预。</li>
+</ul>
+<p><strong>4. 智能体如何解决问题：重构策划流程</strong></p>
+<ul>
+<li>数据整合：自动采集多源数据（政策、地块、行业），替代人工搬运。</li>
+<li>分析自动化：联动工具完成 “政策匹配 - 数据测算 - 逻辑校验”，替代手动调整。</li>
+<li>成果生成：标准化输出报告（含分析、图表、合规检查），替代重复排版。</li>
+</ul>
+<p><strong>5.智能体的优势与价值</strong></p>
+<ul>
+<li>提升工作效率：自动化任务、批量处理，减少重复劳动，提高工作效率。</li>
+<li>降低成本：自动化流程、数据整合，减少人工成本，降低项目成本。</li>
+</ul>
+<h3 id="112--coze国内原生智能体构建平台">11.2  Coze：国内原生智能体构建平台 </h3>
+<p><strong>1.智能体开发与全流程自动化</strong></p>
+<ul>
+<li>提供一站式AI Bot开发平台，用户可快速创建个性化智能体，支持上传TXT、PDF、Excel等多种格式数据，内置知识库功能。</li>
+<li>自动化工作流：支持视频自动剪辑、文案生成、批量处理链接内容等任务，适用于短视频创作、文案润色、数据整理等场景。<br>
+图像流功能：独有的图像处理编排能力（如生成、编辑、发布），比传统工具更简单高效，支持装修效果图生成、一键换脸等创意应用。</li>
+</ul>
+<p><strong>2.多场景应用与发布能力</strong></p>
+<ul>
+<li>智能体可发布至豆包、飞书、抖音、微信等平台，或封装为Web API，便于集成到现有系统。</li>
+<li>支持企业级应用：如客服系统集成、自动化办公（文本识别到飞书表格）、RPA流程自动化等。</li>
+<li>生态与扩展性丰富插件生态：支持天气查询、图像识别、思维导图等插件，可自定义开发复杂功能。</li>
+<li>多模型支持：集成Kimi、通义千问等大模型，提升智能体处理复杂任务的能力。</li>
+</ul>
+<h3 id="113-dify低代码ai应用开发平台">11.3 Dify：低代码AI应用开发平台 </h3>
+<p><strong>1. 智能体开发与工作流自动化</strong></p>
+<ul>
+<li>低代码开发环境：提供可视化界面和预置模板，用户无需编写复杂代码即可创建智能体，支持对话机器人、数据分析工具等应用搭建。</li>
+<li>工作流编排：通过拖拽节点配置自动化流程，例如自动抓取网页数据、生成报告、触发邮件通知等，适用于营销、客服、运营等场景。</li>
+<li>意图识别与多轮对话：内置自然语言处理能力，可训练智能体理解用户意图并实现多轮交互（如订单查询、FAQ应答）。</li>
+</ul>
+<p><strong>2. 企业级集成与私有化部署</strong></p>
+<ul>
+<li>API与插件扩展：支持通过API对接企业现有系统（如CRM、ERP），或集成第三方服务（如短信通知、OCR识别）。</li>
+<li>私有化部署：提供本地化部署方案，保障数据隐私安全，适合金融、医疗等敏感行业。</li>
+</ul>
+<p><strong>3. 模型兼容性与灵活性</strong></p>
+<ul>
+<li>支持主流大模型（如GPT、Claude、本地模型），用户可灵活切换模型引擎，优化任务性能。</li>
+<li>自定义知识库：允许上传行业文档、数据库，提升智能体在垂直领域的专业性。</li>
+</ul>
+<p><strong>4. 多场景应用与发布能力</strong></p>
+<ul>
+<li>快速部署AI工具：10分钟内搭建客服机器人、会议纪要生成器等轻量级应用，直接嵌入企业微信、钉钉等办公平台。</li>
+<li>自动化数据处理：如销售数据自动汇总、舆情监控报告生成，减少人工重复操作。<br>
+跨平台协作：支持与Coze等平台联动，例如调用Coze的图文处理能力扩展Dify功能。</li>
+</ul>
+<h3 id="114-案例示意">11.4 案例示意 </h3>
+<h4 id="1141-前期资料收集与政策研究">11.4.1 前期资料收集与政策研究 </h4>
+<p><strong>目标</strong>：自动抓取政策文件、行业报告、竞品案例等数据。<br>
+<strong>实现方法：插件组合</strong>：</p>
+<ul>
+<li><strong>网页抓取</strong>：使用 <code>LinkReaderPlugin</code>（支持PDF/网页链接解析），输入政府官网或行业平台链接，自动提取文本关键段落。</li>
+<li><strong>语义搜索</strong>：调用 <code>bingWebSearchLight</code> 插件，通过自然语言指令（如“2024年城市更新容积率政策”）获取最新政策。</li>
+<li><strong>数据库存储</strong>：将抓取结果存入Coze内置数据库，按“政策类型”“地区”等标签分类，便于后续调用。</li>
+</ul>
+<p><strong>示例工作流</strong>：<br>
+输入关键词 → 触发网页抓取 → 筛选有效链接 → 提取文本 → 保存至数据库</p>
+<h4 id="1142-规划方案与指标生成">11.4.2 规划方案与指标生成 </h4>
+<p><strong>目标</strong>：根据输入条件（如地块面积、容积率），自动生成规划草案和核心指标。<br>
+<strong>实现方法：低代码工具链</strong>：</p>
+<ul>
+<li><strong>参数输入</strong>：在Coze Bot中设置表单字段（如“用地性质”“建筑面积”），用户填写后触发计算。</li>
+<li><strong>指标计算</strong>：接入 <code>Excel插件</code> 或 <code>公式节点</code>，内置容积率、绿地率等计算公式，自动生成指标表格。</li>
+<li><strong>方案建议</strong>：调用 <code>deepseek</code>等LLM语言模型插件 生成文本描述（如“建议布局商业综合体+住宅”），并通过 <code>generateTreeMind</code> 插件输出思维导图。</li>
+<li></li>
+</ul>
+<p><strong>示例输出</strong>：<br>
+输入：地块面积=5万㎡，容积率=2.5 → 输出：总建筑面积=12.5万㎡，业态配比建议（表格+思维导图）</p>
+<h4 id="1143-经济测算与投融资分析">11.4.3 经济测算与投融资分析 </h4>
+<p><strong>目标</strong>：快速完成成本估算、现金流预测和融资方案。<br>
+<strong>实现方法：模板化处理</strong>：</p>
+<ul>
+<li><strong>预制模板</strong>：在Coze知识库中上传Excel测算模板（如IRR计算表），通过 <code>数据库查询</code> 节点自动填充数据。</li>
+<li><strong>自动化修正</strong>：设置条件判断（如“若地价&gt;1亿，触发融资方案A”），通过 <code>逻辑分支节点</code> 调整输出结果。</li>
+<li><strong>可视化报告</strong>：利用 <code>PPT_Generate</code> 工作流，将测算结果自动生成PPT页（含图表、结论摘要）。</li>
+</ul>
 <hr>
-<p align="right">第一稿完成时间：2025.3.20</p> <right>
+<h4 id="1144-效果图与汇报材料制作">11.4.4 效果图与汇报材料制作 </h4>
+<p><strong>目标</strong>：根据方案参数生成效果图及汇报文档。<br>
+<strong>实现方法：多模态工具</strong>：</p>
+<ul>
+<li><strong>AI绘图</strong>：调用 <code>图像流</code> 功能，输入提示词（如“现代风格商业街区鸟瞰图”），自动生成多版效果图。</li>
+<li><strong>智能排版</strong>：使用 <code>PPT_Generate</code> 工作流，将指标表格、效果图、文本描述自动组合成PPT，并匹配企业VI模板。</li>
+<li><strong>语音解说</strong>：接入 <code>配音插件</code>，为PPT添加AI生成的语音解说（如“本项目总投资约XX亿元…”）。</li>
+</ul>
+<h4 id="1145-全流程串联与优化">11.4.5 全流程串联与优化 </h4>
+<p><strong>整合方案：创建主工作流</strong>：<br>
+在Coze中设计一个串联所有环节的“城市更新助手”Bot，包含以下节点：<br>
+用户输入 → 资料抓取 → 方案生成 → 经济测算 → 效果图制作 → 输出PPT/PDF<br>
+<strong>异常处理</strong>：</p>
+<ul>
+<li>设置 <code>失败重试</code> 机制（如链接抓取失败时切换备用源）。</li>
+<li>通过 <code>人工审核节点</code>，在关键环节（如融资方案）插入人工确认步骤。</li>
+</ul>
+<p><strong>发布与协作</strong>：</p>
+<ul>
+<li>将Bot发布为飞书/微信机器人，支持团队多人协作编辑和反馈收集。</li>
+</ul>
+<h4 id="1146-落地建议">11.4.6 落地建议 </h4>
+<ul>
+<li><strong>从小场景切入</strong>：优先实现 <strong>政策抓取+PPT生成</strong>（成功率最高）。</li>
+<li><strong>复用公开模板</strong>：在Coze商店搜索“城市规划”“经济测算”等现成工作流。</li>
+<li><strong>混合人机协作</strong>：自动化处理重复劳动，保留人工审核关键决策点。</li>
+</ul>
+<h2>写在后面</h2>
+<ul>
+<li>
+<p>从早期实验室的神经网络到chatGPT的问世，再到国内 DeepSeek 开源模型的普及，人工智能历经数十年演进，终于在 2024年底进入了普通人的视野。如今，AI 已渗透到各个领域：国土规划行业对deepseek的场景应用如火如荼，职场人依赖 AI 生成报告，研究者通过模型分析数据 —— 这些日常场景标志着 AI 从技术概念变为生活刚需，如同二十年前电脑成为办公标配，今天的智能工具正在重塑我们的思维与工作方式。</p>
+</li>
+<li>
+<p>站在 2025 年的节点，AI 应用呈现爆发式增长：各类工具层出不穷，但也伴随初期的混乱与摸索。简单调用翻译、生成文本并不难，难的是将工具深度融入业务流程。本人通过实测几百款 AI 工具（涵盖大语言模型、数据分析、内容创作等领域），筛选出最适配策划咨询工作场景的工具组合，并在实际项目中验证：原本需要一周的策划咨询报告初稿，现在通过利用AI工具缩短至1天，文本专业性提升的同时，能做到快速反应---会议一结束即可同步形成思路和关键议题。这种效率革命，正是 AI 与行业深度融合的缩影。</p>
+</li>
+<li>
+<p>当然，现阶段的应用仍存局限：工具间的兼容性不足、复杂场景的适配性待优化，甚至出现过模型误判导致的流程卡顿。但正如互联网初期的 "拨号时代"，技术阵痛挡不住趋势洪流。就像我们曾用十年适应电脑办公，如今也需以开放心态学习提示词逻辑、理解模型边界。在咨询项目中，通过定制化知识库提升咨询方案效率；在跨部门协作中，用 AI 会议纪要工具减少信息损耗 —— 这些实践证明：AI 不是替代者，而是需要被 "用好" 的协作伙伴。</p>
+</li>
+<li>
+<p>面向未来，这场技术变革已进入 "工具深化期"：从简单替代重复劳动，转向重构工作流程。尽管现阶段工具生态仍显稚嫩，但持续关注技术迭代、积累场景经验，就能把握先机。正如当年从纸质文件转向电子文档的过渡，今天的我们正在经历从 "人工操作" 到 "人机协同" 的第二次办公革命。保持对新技术的敏感度，在实践中打磨 "工具 - 场景 - 需求" 的匹配能力，既是应对时代变革的生存法则，也是创造价值的核心竞争力。</p>
+</li>
+</ul>
+ <p align="right">第一稿完成时间：2025.3.20</p> <right>
 </right>
       </div>
       
